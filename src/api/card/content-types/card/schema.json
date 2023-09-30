@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cards",
+  "info": {
+    "singularName": "card",
+    "pluralName": "cards",
+    "displayName": "Cards"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "shortdesc": {
+      "type": "string"
+    },
+    "previewlink": {
+      "type": "string"
+    },
+    "sourcecodelink": {
+      "type": "string"
+    },
+    "buttoncolor": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "tags": {
+      "type": "json"
+    }
+  }
+}
