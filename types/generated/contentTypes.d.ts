@@ -368,12 +368,12 @@ export interface ApiCardCard extends Schema.CollectionType {
     singularName: 'card';
     pluralName: 'cards';
     displayName: 'Cards';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    slug: Attribute.UID;
     Description: Attribute.Text;
     Title: Attribute.String;
     shortdesc: Attribute.String;
@@ -382,6 +382,7 @@ export interface ApiCardCard extends Schema.CollectionType {
     buttoncolor: Attribute.String;
     imageUrl: Attribute.Media;
     tags: Attribute.JSON;
+    para: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

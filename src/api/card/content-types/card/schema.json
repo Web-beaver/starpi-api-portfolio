@@ -4,16 +4,14 @@
   "info": {
     "singularName": "card",
     "pluralName": "cards",
-    "displayName": "Cards"
+    "displayName": "Cards",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "slug": {
-      "type": "uid"
-    },
     "Description": {
       "type": "text"
     },
@@ -33,17 +31,21 @@
       "type": "string"
     },
     "imageUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "tags": {
       "type": "json"
+    },
+    "para": {
+      "type": "text"
     }
   }
 }
